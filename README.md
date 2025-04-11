@@ -23,7 +23,7 @@ FastqGen is a lightweight tool that generates simulated FASTQ files with random 
 
 The program requires two command-line arguments:
 ```bash
-java Main <sequenceLength> <fileSizeInMB>
+java -jar fastqgen.jar <sequenceLength> <fileSizeInMB>
 ```
 
 Parameters:
@@ -32,7 +32,7 @@ Parameters:
 
 Example:
 ```bash
-java Main 150 20    # Generates sequences of 150bp with a total file size of 20MB
+java -jar fastqgen.jar 150 20    # Generates sequences of 150bp with a total file size of 20MB
 ```
 
 The output filename is automatically generated with format: `simulated_YYYYMMDDHHMMSS.fastq`
@@ -69,7 +69,7 @@ mvn clean package
 
 ### Running the Application
 
-After building, you can run the application using:
+After building, you can run the application using the generated jar in the target directory:
 
 ```bash
 java -jar fastqgen.jar <sequenceLength> <fileSizeInMB>
