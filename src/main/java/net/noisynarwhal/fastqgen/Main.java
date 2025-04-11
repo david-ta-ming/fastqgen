@@ -1,4 +1,4 @@
-package net.noisynarwhal;
+package net.noisynarwhal.fastqgen;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
